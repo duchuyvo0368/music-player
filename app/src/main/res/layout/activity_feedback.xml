@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:padding="10dp"
+
+    tools:context=".FeedbackActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailFA"
+        android:layout_width="330dp"
+        android:layout_height="61dp"
+        android:gravity="center |start"
+        android:hint="@string/email_feedback"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/topicFA"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:gravity="center |start"
+        android:hint="@string/topic_feedback"
+        android:inputType="textEmailSubject"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedbackMsgFA"
+        android:layout_width="328dp"
+        android:layout_height="231dp"
+        android:gravity="center |start"
+        android:hint="@string/topic_feedback"
+        android:inputType="textLongMessage"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="15dp"
+        android:id="@+id/sendFA"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="@string/send"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="15dp"
+        android:id="@+id/backFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/back_btn"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
