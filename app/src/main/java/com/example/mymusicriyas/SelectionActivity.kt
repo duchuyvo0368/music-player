@@ -17,7 +17,6 @@ class SelectionActivity : AppCompatActivity() {
         setTheme(R.style.coolPink)
         setContentView(binding.root)
 
-
         binding.selectionRV.setItemViewCacheSize(10)
         binding.selectionRV.setHasFixedSize(true)
         binding.selectionRV.layoutManager = LinearLayoutManager(this)

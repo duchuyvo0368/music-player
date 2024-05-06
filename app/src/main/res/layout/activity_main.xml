@@ -53,7 +53,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:contentDescription="@string/favorites_btn"
-                    android:drawableTop="@drawable/favorite_icon"
+                    android:drawableTop="@drawable/favourite_empty_icon"
                     />
 
                 <Button
@@ -77,7 +77,7 @@
             </LinearLayout>
             <TextView
                 android:padding="2dp"
-                android:background="#72CAECCE"
+
                 android:id="@+id/totalSongs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,7 +105,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:background="@drawable/drawerbackground"
         android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

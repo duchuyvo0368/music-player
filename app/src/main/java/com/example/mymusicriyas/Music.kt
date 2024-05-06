@@ -1,6 +1,5 @@
 package com.example.mymusicriyas
 
-import android.media.MediaMetadata
 import android.media.MediaMetadataRetriever
 import java.io.File
 import java.util.concurrent.TimeUnit
@@ -66,7 +65,7 @@ fun exitApplication(){
 }
 fun favouriteChecker(id : String):Int{
     PlayerActivity.isFavourite =false
-        favouriteActivity.favouriteSongs.forEachIndexed { index, music ->
+        FavouriteActivity.favouriteSongs.forEachIndexed { index, music ->
             if (id== music.id){
                 PlayerActivity.isFavourite =true
                 return index

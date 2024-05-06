@@ -26,7 +26,6 @@
         android:maxLines="2"
         android:layout_marginTop="70dp"
         android:layout_gravity="bottom"
-        android:textColor="@color/white"
         android:text="@string/Song_name"
         android:gravity="center"
         />

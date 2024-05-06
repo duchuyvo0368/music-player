@@ -22,18 +22,19 @@
             android:layout_height="30dp"
             android:backgroundTint="@android:color/transparent"
             android:contentDescription="@string/back_btn"
+            android:padding="7dp"
             android:src="@drawable/back_icon" />
 
         <TextView
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
             android:id="@+id/playlistNamePD"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/playlist_btn"
             android:gravity="center"
             android:text="@string/playlist_btn"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold"
+            android:textSize="19sp"
 
             />
     </LinearLayout>
@@ -62,7 +63,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:textColor="@color/white"
             android:padding="10dp"
             android:gravity="start"
 
@@ -89,6 +89,7 @@
         android:id="@+id/shuffleBtnPD"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:backgroundTint="#F4F0F0"
         app:icon="@drawable/suffle_icon"
         app:iconSize="35sp"
         app:strokeColor="@color/white"
@@ -114,13 +115,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/white"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:contentDescription="@string/add_song"
             android:drawableLeft="@drawable/ic_baseline_add_24"
             android:text="@string/add_song"
+            android:textColor="@color/black"
             android:textAllCaps="false"
-
             android:textStyle="bold"
             />
 
@@ -135,8 +135,8 @@
             android:contentDescription="@string/remove_all"
             android:drawableLeft="@drawable/remove_icon"
             android:text="@string/remove_all"
+            android:textColor="@color/black"
             android:textAllCaps="false"
-            android:textColor="@color/white"
             android:textStyle="bold"
 
             />

@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mymusicriyas.databinding.ActivityFavouriteBinding
 
-class favouriteActivity : AppCompatActivity() {
+class FavouriteActivity : AppCompatActivity() {
     private lateinit var adapter: FavouriteAdapter
     private lateinit var binding:ActivityFavouriteBinding
 
@@ -24,6 +23,7 @@ class favouriteActivity : AppCompatActivity() {
 
 //        setContentView(R.layout.activity_favourite)
         setContentView(binding.root)
+        supportActionBar!!.hide();
         favouriteSongs = checkPlaylist(favouriteSongs)
         binding.backBtnFA.setOnClickListener{
             finish()

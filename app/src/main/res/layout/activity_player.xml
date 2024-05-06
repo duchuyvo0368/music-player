@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
 
     android:layout_marginTop="2sp"
-    android:background="@drawable/background"
     android:gravity="center"
     tools:context=".PlayerActivity">
 
@@ -26,8 +25,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageButton
-
-
+            android:padding="7dp"
             android:id="@+id/backBtnPA"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -202,7 +200,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/repeat_btn"
             android:src="@drawable/repeat_icon"
-            app:tint="@color/cool_pink" />
+            />
 
         <ImageButton
             android:layout_margin="5dp"

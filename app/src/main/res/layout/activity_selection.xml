@@ -23,6 +23,7 @@
         app:layout_constraintVertical_bias="0.018">
 
         <ImageButton
+            android:padding="7dp"
             android:id="@+id/backBtnSA"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -39,7 +40,6 @@
             android:background="@drawable/custom_search_view"
             android:focusable="false"
             app:iconifiedByDefault="false"
-            android:textColor="@color/white"
             app:queryHint="@string/search_song"
             app:searchIcon="@drawable/search_icon"
 

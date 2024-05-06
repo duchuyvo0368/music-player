@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.net.Uri
-import android.os.Build
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,7 +23,6 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import java.io.File
-import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -84,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.favoritesBtn.setOnClickListener {
 
-            startActivity(Intent(this@MainActivity,favouriteActivity::class.java))
+            startActivity(Intent(this@MainActivity,FavouriteActivity::class.java))
             //            Toast.makeText(this@MainActivity,"shuffle Button clicked",Toast.LENGTH_SHORT).show()
         }
 
@@ -308,7 +306,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         val editor= getSharedPreferences("FAVOURITES", MODE_PRIVATE).edit()
-        val jsonString=GsonBuilder().create().toJson(favouriteActivity.favouriteSongs)
+        val jsonString=GsonBuilder().create().toJson(FavouriteActivity.favouriteSongs)
         editor.putString("FavouriteSongs",jsonString)
         val jsonStringPlaylist = GsonBuilder().create().toJson(PlaylistActivity.musicPlaylist)
         editor.putString("MusicPlaylist",jsonStringPlaylist)
@@ -325,14 +323,14 @@ class MainActivity : AppCompatActivity() {
     }
     private fun initialAfter(){
         //for retrieving favourites using shared preferences
-        favouriteActivity.favouriteSongs = ArrayList()
+        FavouriteActivity.favouriteSongs = ArrayList()
         val editor =getSharedPreferences("FAVOURITES", MODE_PRIVATE)
         val jsonString=editor.getString("FavouriteSongs",null)
         val typeToken = object :TypeToken<ArrayList<Music>>(){}.type
 
         if (jsonString != null){
             val data:ArrayList<Music> =GsonBuilder().create().fromJson(jsonString,typeToken)
-            favouriteActivity.favouriteSongs.addAll(data)
+            FavouriteActivity.favouriteSongs.addAll(data)
         }
 
         PlaylistActivity.musicPlaylist = MusicPlaylist()

@@ -17,7 +17,6 @@
         android:hint="@string/email_feedback"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="10dp"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +31,6 @@
         android:hint="@string/topic_feedback"
         android:inputType="textEmailSubject"
         android:paddingHorizontal="10dp"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +47,6 @@
         android:paddingHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.646" />
@@ -61,27 +58,24 @@
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:text="@string/send"
+
+        android:gravity="center"
+        android:layout_marginTop="60dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintStart_toStartOf="@id/feedbackMsgFA"
+        app:layout_constraintTop_toBottomOf="@id/feedbackMsgFA"/>
 
     <com.google.android.material.button.MaterialButton
         app:cornerRadius="15dp"
         android:id="@+id/backFA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="@string/back_btn"
+        android:layout_marginTop="60dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintEnd_toEndOf="@id/feedbackMsgFA"
+        app:layout_constraintTop_toBottomOf="@id/feedbackMsgFA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

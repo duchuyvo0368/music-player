@@ -21,11 +21,9 @@ import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.mymusicriyas.databinding.ActivityPlayerBinding
-import com.example.mymusicriyas.databinding.ActivityPlaylistBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.Exception
-import kotlin.system.exitProcess
 
 class PlayerActivity : AppCompatActivity() , ServiceConnection , MediaPlayer.OnCompletionListener{
 
@@ -58,7 +56,7 @@ class PlayerActivity : AppCompatActivity() , ServiceConnection , MediaPlayer.OnC
 
         setTheme(R.style.Theme_MyMusicRiyas)
         binding= ActivityPlayerBinding.inflate(layoutInflater)
-
+        supportActionBar!!.hide();
 //        setContentView(R.layout.activity_player)
 
         setContentView(binding.root)
@@ -147,12 +145,12 @@ class PlayerActivity : AppCompatActivity() , ServiceConnection , MediaPlayer.OnC
             if (isFavourite){
                 isFavourite =false
                 binding.favoritesBtnPA.setImageResource(R.drawable.favourite_empty_icon)
-                favouriteActivity.favouriteSongs.removeAt(fIndex)
+                FavouriteActivity.favouriteSongs.removeAt(fIndex)
             }
             else{
                 isFavourite =true
                 binding.favoritesBtnPA.setImageResource(R.drawable.favorite_icon)
-                favouriteActivity.favouriteSongs.add(musicListPA[songPosition])
+                FavouriteActivity.favouriteSongs.add(musicListPA[songPosition])
 
             }
         }
@@ -209,7 +207,7 @@ class PlayerActivity : AppCompatActivity() , ServiceConnection , MediaPlayer.OnC
                 bindService(intent,this, BIND_AUTO_CREATE)
                 startService(intent)
                 musicListPA= ArrayList()
-                musicListPA.addAll(favouriteActivity.favouriteSongs)
+                musicListPA.addAll(FavouriteActivity.favouriteSongs)
                 setLayout()
 
             }
@@ -261,7 +259,7 @@ class PlayerActivity : AppCompatActivity() , ServiceConnection , MediaPlayer.OnC
                 bindService(intent,this, BIND_AUTO_CREATE)
                 startService(intent)
                 musicListPA= ArrayList()
-                musicListPA.addAll(favouriteActivity.favouriteSongs)
+                musicListPA.addAll(FavouriteActivity.favouriteSongs)
                 musicListPA.shuffle()
                 setLayout()
             }

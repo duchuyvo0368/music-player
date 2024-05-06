@@ -15,14 +15,13 @@
 
         />
     <TextView
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:textStyle="bold |italic"
         android:text="@string/text_nav"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="@color/white"
-        android:textSize="26dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
         />
 
 </LinearLayout>

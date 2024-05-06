@@ -29,7 +29,7 @@ class PlaylistActivity : AppCompatActivity() {
 
 //        setContentView(R.layout.activity_playlist)
         setContentView(binding.root)
-
+        supportActionBar!!.hide();
         binding.playlistRV.setHasFixedSize(true)
         binding.playlistRV.setItemViewCacheSize(13)
         binding.playlistRV.layoutManager= GridLayoutManager(this@PlaylistActivity,2)

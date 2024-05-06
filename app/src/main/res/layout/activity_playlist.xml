@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.001">
 
         <ImageButton
+            android:padding="7dp"
             android:id="@+id/backBtnPLA"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -28,14 +29,14 @@
            />
 
         <TextView
+            android:layout_marginEnd="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="@color/black"
             android:contentDescription="@string/playlist_btn"
             android:gravity="center"
             android:text="@string/playlist_btn"
-
-            android:textSize="25sp"
-            android:textStyle="bold"
+            android:textSize="19sp"
 
             />
     </LinearLayout>
@@ -59,14 +60,14 @@
         android:layout_height="wrap_content"
         app:icon="@drawable/ic_baseline_add_24"
         app:iconSize="35sp"
-
+        android:backgroundTint="#F4F0F0"
+        app:strokeWidth="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.941"
-        app:strokeWidth="2dp"
         app:strokeColor="@color/white"/>
 
 

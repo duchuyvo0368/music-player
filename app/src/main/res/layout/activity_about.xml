@@ -13,7 +13,6 @@
         android:layout_margin="16dp"
         android:gravity="center"
         android:text="@string/about"
-        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,12 +23,12 @@
 
     <Button
         android:id="@+id/backBtnAB"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#ADDF0387"
         android:text="Back"
-        android:textColor="#ffff"
         android:textStyle="bold "
+        android:gravity="center"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"

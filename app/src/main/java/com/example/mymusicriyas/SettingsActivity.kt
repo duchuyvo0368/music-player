@@ -12,6 +12,7 @@ class SettingsActivity : AppCompatActivity() {
         setTheme(R.style.coolPinkNav)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.hide();
         supportActionBar?.title = "Settings"
     }
 }

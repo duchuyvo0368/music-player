@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".favouriteActivity">
+    tools:context=".FavouriteActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:padding="7dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,21 +24,20 @@
             android:id="@+id/backBtnFA"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:backgroundTint="@android:color/transparent"
+            android:padding="7dp"
+            android:backgroundTint="@color/white"
             android:contentDescription="@string/back_btn"
             android:src="@drawable/back_icon"
-          />
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/favorites_btn"
             android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
             android:text="@string/favorites_btn"
-
-            android:textSize="25sp"
-            android:textStyle="bold"
-
+            android:textSize="19sp"
             />
     </LinearLayout>
 
@@ -60,8 +58,8 @@
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/shuffleBtnFA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:icon="@drawable/suffle_icon"
         app:iconSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +68,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.941"
-        app:strokeWidth="2dp"
-       />
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/teal_200"
+        android:backgroundTint="#E4DADA"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

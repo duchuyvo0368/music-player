@@ -7,12 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorOfStatusBar">#FFBB86FC</color>
+    <color name="colorPrimary">#2D9CDB</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">#F3D231</color>
+    <color name="textError">#ff6262</color>
+
 
 <!--    custom colors-->
     <color name="cool_blue">#0091EA</color>
     <color name="cool_green">#64DD17</color>
     <color name="cool_pink">#F50057</color>
     <color name="yellow">#ffd600</color>
-    <color name="backgroundshufflefavourute">#EFAD7B</color>
-    <color name="playlistfloatingcolor">#74C2F6</color>
+
 </resources>

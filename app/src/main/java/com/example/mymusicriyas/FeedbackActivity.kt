@@ -29,7 +29,7 @@ class FeedbackActivity : AppCompatActivity() {
         binding = ActivityFeedbackBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.title = "Feedback"
-
+        supportActionBar!!.hide();
 
         binding.sendFA.setOnClickListener {
           /*  val feedbackMs=binding.feedbackMsgFA.text.toString() + "\n" +binding.emailFA.text.toString()
